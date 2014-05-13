@@ -3,7 +3,7 @@
     
     xmlns:android="http://schemas.android.com/apk/res/android">  
     <solid
-        android:color="@android:color/secondary_text_light">
+        android:color="@android:color/secondary_text_dark">
     </solid>
     <padding
         android:left="5dp"
