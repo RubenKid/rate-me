@@ -6,7 +6,7 @@
 
     <!-- TODO: get back to 11 as the min SDK version -->
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="18" />
 
     <application
