@@ -43,11 +43,16 @@ public class DialogRateMe extends DialogFragment {
     }
 
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         appPackageName = getArguments().getString(EXTRA_PACKAGE_NAME);
         initializeUiFields();
+        createDialog();
         Log.d(TAG, "initialize correctly all the components");
 
+        
+    }
+    
+    private Dialog createDialog (){
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
@@ -80,6 +85,7 @@ public class DialogRateMe extends DialogFragment {
             }
         });
         return builder.setView(mView).setCustomTitle(tView).setCancelable(false).create();
+        
     }
 
     private void initializeUiFields() {
